@@ -9,10 +9,10 @@ let score = 0;
 //3 = blue
 
 //set variables representing divs in the html code
-const green = document.querySelector(".green");
-const red = document.querySelector(".red");
-const yellow = document.querySelector(".yellow");
-const blue = document.querySelector(".blue");
+const green = document.querySelector(".green-button");
+const red = document.querySelector(".red-button");
+const yellow = document.querySelector(".yellow-button");
+const blue = document.querySelector(".blue-button");
 
 //function to start the game
 let playGame = () => {

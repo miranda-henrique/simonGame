@@ -12,42 +12,89 @@ body {
 }
 
 .simon {
-    display: grid;
-    grid-template-areas: 
-    "green-button red-button"
-    "yellow-button blue-button";
-    grid-gap: 10px;
-    border: 1px solid #ffffff;
-    background-color: #ffffff;
-    border-radius: 100%;
-    width: 700px;
-    height: 700px;
+    background: #ffffff;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    border-style: solid;
+    border-width: 10px;
+    margin: auto;
+    margin-top: 60px;
+    box-shadow: 8px 8px 15px 5px #888888;
 }
 
-.blue {
-    grid-area: blue-button;
-    background-color: blue;
-    border-bottom-right-radius: 100%;
+.green-button {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 250px 0 0 0;
+    background: darkgreen;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0px 0px -250px;
+    border-style: solid;
+    border-width: 5px;
+    box-sizing: border-box;   
 }
 
-.yellow {
-    grid-area: yellow-button;
-    background-color: yellow;
-    border-bottom-left-radius: 100%;
+.red-button {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 0 250px 0 0;
+    background: darkred;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0px 0px 0px;
+    border-style: solid;
+    border-width: 5px;
+    box-sizing: border-box;
 }
 
-.red {
-    grid-area: red-button;
-    background-color: red;
-    border-top-right-radius: 100%;
+
+.blue-button {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 0 0 250px 0;
+    background: darkblue;
+    top: 50%;
+    left: 50%;
+    margin: 0px 0px -250px 0px;
+    border-style: solid;
+    border-width: 5px;
+    box-sizing: border-box;
 }
 
-.green {
-    grid-area: green-button;
-    background-color: green;
-    border-top-left-radius: 100%;
+.yellow-button {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 0 0 0 250px;
+    background: goldenrod;
+    top: 50%;
+    left: 50%;
+    margin: 0px -250px 0px -250px;
+    border-style: solid;
+    border-width: 5px;
+    box-sizing: border-box;    
 }
 
 .selected {
     opacity: 0.4;
+}
+
+.inner-circle {
+    position: absolute;
+    background: grey;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    border-style: solid;
+    border-width: 10px;
+    top: 50%;
+    left: 50%;
+    margin: -125px 0px 0px -125px;
+    box-sizing: border-box;
 }
