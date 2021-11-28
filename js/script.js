@@ -13,17 +13,20 @@ const green = document.querySelector(".green-button");
 const red = document.querySelector(".red-button");
 const yellow = document.querySelector(".yellow-button");
 const blue = document.querySelector(".blue-button");
+const scoreDisplay = document.querySelector(".score");
 
 //function to start the game
 let playGame = () => {
     alert("Welcome to the Simon Game! Let's start a new game!");
     score = 0;
+    scoreDisplay.innerHTML = score;
 
     nextLevel();
 }
 
 //on to the next level
 let nextLevel = () => {
+    scoreDisplay.innerHTML = score;
     score++;
     shuffleOrder();
 }
