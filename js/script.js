@@ -15,6 +15,7 @@ const yellow = document.querySelector(".yellow-button");
 const blue = document.querySelector(".blue-button");
 const scoreDisplay = document.querySelector(".score");
 
+
 //function to start the game
 let playGame = () => {
     alert("Welcome to the Simon Game! Let's start a new game!");
@@ -123,5 +124,20 @@ let gameOver = () => {
     playGame();
 }
 
-//start the game
-playGame();
+let startTheGame = () => {
+    const startButton = document.querySelector(".start-button");
+    
+    //light on
+    startButton.classList.add("selected");
+   
+    //light off
+    setTimeout(() => {
+        startButton.classList.remove("selected");
+    }, 500);
+
+    order = [];
+    clickedOrder = [];
+
+    playGame();
+}
+
